@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test *)",
+      "Bash(rm -f src/components/WhatToWearCard.tsx)",
+      "Bash(perl -pi -e 's/^.*\"render:screens\".*\\\\n//' package.json)",
+      "Bash(npm run *)",
+      "Bash(perl -0pi -e \"s/import \\\\{ fabric, hairColor \\\\} from '..\\\\/src\\\\/theme.ts';/import { paintColor } from '..\\\\/src\\\\/theme.ts';/; s/function color\\\\\\(paint: Paint \\\\| 'none' \\\\| undefined, tone: Garment\\\\['tone'\\\\]\\\\\\): string \\\\{.*?\\\\n\\\\}/const color = paintColor;/s\" tools/renderIcons.ts)",
+      "Bash(node --experimental-strip-types tools/renderIcons.ts)",
+      "Bash(perl -pi -e ' *)",
+      "Bash(perl -pi -e 's/\"name\": \"what-to-wear\",/\"name\": \"weatherfit\",/' package.json)"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "WeatherFit",
+  "short_name": "WeatherFit",
+  "description": "The forecast, and what to wear in it, hour by hour.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080B16",
+  "theme_color": "#080B16",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Widget view", "url": "/?view=widget" }
+  ]
+}
